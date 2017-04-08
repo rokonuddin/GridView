@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F3A45FC1E98FED100AEE222 /* DynamicHeightLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A45FB1E98FED100AEE222 /* DynamicHeightLayout.swift */; };
 		2F48DB181E94B37E00017F88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F48DB171E94B37E00017F88 /* AppDelegate.swift */; };
 		2F48DB1A1E94B37E00017F88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F48DB191E94B37E00017F88 /* ViewController.swift */; };
 		2F48DB1D1E94B37E00017F88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F48DB1B1E94B37E00017F88 /* Main.storyboard */; };
@@ -16,10 +17,10 @@
 		2F48DB2D1E94C70F00017F88 /* MyGridViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F48DB2C1E94C70F00017F88 /* MyGridViewPresenter.swift */; };
 		2F48DB301E94C9CA00017F88 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F48DB2E1E94C9CA00017F88 /* CollectionViewCell.swift */; };
 		2F48DB311E94C9CA00017F88 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F48DB2F1E94C9CA00017F88 /* CollectionViewCell.xib */; };
-		2F48DB341E94CC8F00017F88 /* Poem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F48DB331E94CC8F00017F88 /* Poem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F3A45FB1E98FED100AEE222 /* DynamicHeightLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DynamicHeightLayout.swift; path = GridView/DynamicHeightLayout.swift; sourceTree = "<group>"; };
 		2F48DB141E94B37E00017F88 /* GridView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F48DB171E94B37E00017F88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F48DB191E94B37E00017F88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		2F48DB2C1E94C70F00017F88 /* MyGridViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGridViewPresenter.swift; sourceTree = "<group>"; };
 		2F48DB2E1E94C9CA00017F88 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		2F48DB2F1E94C9CA00017F88 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		2F48DB331E94CC8F00017F88 /* Poem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Poem.swift; path = Model/Poem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				2F48DB291E94B3C200017F88 /* GridView.swift */,
+				2F3A45FB1E98FED100AEE222 /* DynamicHeightLayout.swift */,
 			);
 			name = GridView;
 			sourceTree = "<group>";
@@ -98,7 +99,6 @@
 		2F48DB351E94CC9400017F88 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2F48DB331E94CC8F00017F88 /* Poem.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -177,10 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F48DB301E94C9CA00017F88 /* CollectionViewCell.swift in Sources */,
+				2F3A45FC1E98FED100AEE222 /* DynamicHeightLayout.swift in Sources */,
 				2F48DB1A1E94B37E00017F88 /* ViewController.swift in Sources */,
 				2F48DB2A1E94B3C200017F88 /* GridView.swift in Sources */,
 				2F48DB181E94B37E00017F88 /* AppDelegate.swift in Sources */,
-				2F48DB341E94CC8F00017F88 /* Poem.swift in Sources */,
 				2F48DB2D1E94C70F00017F88 /* MyGridViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +343,7 @@
 				2F48DB281E94B37E00017F88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

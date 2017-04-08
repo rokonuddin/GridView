@@ -8,6 +8,13 @@
 
 import UIKit
 
+struct Hadith {
+    var narrator: String?
+    var hadith: String?
+    var hadithArabic: String?
+    var reference: String?
+    var footNote: String?
+}
 protocol GridViewPresenter {
     func setupGridView(_ gridView: UICollectionView)
     func nummberOfSections(in gridView: UICollectionView) -> Int
@@ -48,13 +55,15 @@ class GridView: UIView {
     
     private func commonInit() {
         if collectionView == nil {
-            let layout = UICollectionViewFlowLayout()
-            layout.minimumLineSpacing = appearence.cellSpacing
-            layout.minimumInteritemSpacing = appearence.cellSpacing
+            let dynamicHeightLayout = DynamicHeightLayout()
+            dynamicHeightLayout.delegate = self
+//            dynamicHeightLayout.minimumLineSpacing = appearence.cellSpacing
+//            dynamicHeightLayout.minimumInteritemSpacing = appearence.cellSpacing
             
-            collectionView = UICollectionView(frame: bounds, collectionViewLayout: layout)
+            collectionView = UICollectionView(frame: bounds, collectionViewLayout: dynamicHeightLayout)
             collectionView.delegate = self
             collectionView.dataSource = self
+            
             
             collectionView.translatesAutoresizingMaskIntoConstraints = false
             addSubview(collectionView)
@@ -105,29 +114,16 @@ extension GridView: UICollectionViewDataSource {
     }
 }
 
-extension GridView: UICollectionViewDelegateFlowLayout {
+
+
+
+extension GridView: DynamicHeightLayoutDelegate {
     
-    private func expectedCellWidth() -> CGFloat {
-        let a = appearence
-        let padding = a.insets.left + a.insets.right
-        let cpl = CGFloat(a.cellsPerLine)
-        let space = a.cellSpacing * (cpl - 1)
-        return (bounds.width - padding - space) / cpl
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let w = expectedCellWidth()
-        return CGSize(width: w, height: appearence.cellHeight ?? w)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return appearence.insets
+    func collectionView(_ collectionView: UICollectionView, columnWidth: CGFloat, heightForItemAt indexPath: IndexPath) -> CGFloat {
+        let height = CollectionViewCell.calculateHeightForHadith(items[indexPath.row], width: columnWidth)
+        return height
     }
 }
-
-
-
-
 
 
 

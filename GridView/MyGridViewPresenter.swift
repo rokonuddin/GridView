@@ -7,44 +7,27 @@
 //
 
 import UIKit
+let items = [
+    
+    
+    Hadith(narrator: "in the parking lot this new fallen snow- much of it Reservedlot this new fallen snow- much of it Reserved", hadith: "the scent of spring each time you're passing by - midwinter's daydream the scent of spring each time you're passing by - midwinter's daydream the scent of spring each time you're passing by - midwinter's daydreamthe scent of spring each time you're passing by - midwinter's daydream", hadithArabic: "outside t parking lot this new fallen snow- much of it Reservedlink fence deer tracks in the deer in the parking lot this new fallen snow- much of it Reserved park along the chainlink fence deer tracks in the snow", reference: "A haiku critic deflowering* a daisy - haiku... not haiku fdfas |", footNote: "sun breaki parking lot this new fallen snow- much of it Reservedlink fence deer tracks in tng through white plumage brighter six little egrets"),
+    Hadith(narrator: "in the p parking lot this new fallen snow- much of it Reservedlink fence deer tracks in tarking lot this new fallen snow- much of it Reserved", hadith: "the scent of spring each time you're passing by - midwinter's daydream", hadithArabic: "outside the deer park along the chainlink fin the parking lot this new fallen snow- much of it Reservedence deer tracks in the snow", reference: "A haiku critic deflowering* a daisy - haiku... not haiku..asd f| ", footNote: "sun breaking through white plumage brighter six little egrets"),
+    Hadith(narrator: "in the parking lot this new fallen snow- much of it Reserved", hadith: "the scent of spring each time you're passing by - midwinter's daydream", hadithArabic: "outsin the parking lot this new fallen snow- much of it Reservedide the deer park along the chainlink fence deer tracks in the snow", reference: "A haiku critic deflowering* a daisy - haiku... not haiku..asdf f asdf sadf sf|", footNote: "sun breaking through white plumage brighter six little egrets"),
+    Hadith(narrator: "in the parking lot this new fallen snow- much of it Reserved", hadith: "the scent of spring each time you're passing by - midwinter's daydream", hadithArabic: "outsidin the parking lot this new fallen snow- much of it Reservede the deer park along the chainlink fence deer tracks in the snow", reference: "A haiku critic deflowering* a daisy - haiku... not haiku..asdf sdf safd fds a|", footNote: "sun brthrough white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egretseakinin the parking lot this new fallen snow- much of it Reservedg through white plumage brighter six little egrets"),
+    Hadith(narrator: "in the parking lot this new fallen snow- much of it Reserved", hadith: "sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets ", hadithArabic: "outside the deer park along the chainlink fence deer tracks in the snow", reference: "A haiku critic deflowering* a daisy - haiku... not haiku..asdf sf sa fs| sdfsa | ", footNote: "sun breaking through white plumage brighter six little egrets"),
+    Hadith(narrator: "in thin the parking lot this new fallen snow- much of it Reservede parking lot this new fallen snow- much of it Reserved", hadith: "sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets  sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets rokon" , hadithArabic: "outside the deer park along the chainin the parking lot this new fallen snow- much of it Reservedlink fence deer tracks in the snow", reference: "A haiku critic deflowering* adfas df sadfs a | dfasdfs afdfsadf safsdfsaf sdfdsf seawfsfsdfsdafsadfsdf sdfsda asfsdfsaf sdfs|", footNote: "sun breaking through white plumage brighter six little egrets"),
+    Hadith(narrator: "in the parking lot this new fallen snow- much of it Reserved", hadith: "the scent of sp parking lot this new fallen snow- much of it Reservedlink fence deer tracks in tring each time you're passing by - midwinter's daydream", hadithArabic: "outside the deer park along the chainlink fence deer tracks in the snow", reference: "A haiku critic deflowering* a daisy - haiku... notasdf ft43t wewr wewrt e4t ewfrsdfwesr  haiku |", footNote: "sun breaking through white plumage brighter six little egrets"),
+    Hadith(narrator: "in the parking lot this new fallen snow- much of it Reserved", hadith: "the scent of spring each time you're passing by - midwinter's daydream", hadithArabic: "outside the deer park along the chainlink fence deer tracks in the snow", reference: "A haiku critic deflowering* a daisy - haiku... not haikuasdf sdfsdf sdf sdfsd f sdyhte derr fgterwt43we tertfgerte4 t4t54 t45t4t", footNote: "sun breathrough white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets king through white plumage brighter six little egrets"),
+    Hadith(narrator: "in the  parking lot this new fallen snow- much of it Reservedlink fence deer tracks in tparking lot this new heavy showers the cold front passes a flux of starlings fallen snow- much of it Reserved", hadith: "the scent of spring each time youre passing by - midwinter's daydream", hadithArabic: "outside t parking lot this new fallen snow- much of it Reservedlink fence deer tracks in the deer park along the chainlink fence deer tracks in the snow", reference: "A haiku critic deflowering* a daisy - haiku... not haiku.. fasdf |", footNote: "through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets  through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets"),
+    Hadith(narrator: "in t p parking lot this new fallen snow- much of it Reservedlink fence deer tracks in tarking lot this new fallen snow- much of it Reservedlink fence deer tracks in the parking lot this new fallen snow- much of it Reserved", hadith: "the scent parking lot this new fallen snow- much of it Reservedlink fence deer tracks in t of spring each time you're passing by - mi parking lot this new fallen snow- much of it Reservedlink fence deer tracks in tdwinter's daydream", hadithArabic: "outside the deer park along the chainlink fence deer tracks in the snow heavy showers the cold front passes a flux of starlings", reference: "A haiku critic  parking lot this new fallen snow- much of it Reservedlink fence deer tracks in tdeflowering* a daisy - haiku... not haiku..dgsdf  |", footNote: "sun breaking through white plumage brighter six little egrets"),
+    Hadith(narrator: "in the parking lot this new fallen snow- much of it Reserved", hadith: "the scent of spring each time you're passing by - midwinter's daydream", hadithArabic: "outside the deer park along the chainlink fence deer tracks in the snow", reference: "A haiku critic deflowering* a daisy - haiku... not haiku |", footNote: "sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets sun breaking through white plumage brighter six little egrets ")]
 
 class MyGridViewPresenter: GridViewPresenter {
     
-    let items = [
-        "in the parking lot this new fallen snow- much of it Reserved",
-        "the scent of spring each time you're passing by - midwinter's daydream",
-        "A mocking bird sings Moonlight silvers cat whiskers Dozing, she listens",
-        "outside the deer park along the chainlink fence deer tracks in the snow",
-        "on a receipt in shaky letters, times of early contractions",
-        "A haiku critic deflowering* a daisy - haiku... not haiku..",
-        "after the rain walking on moonlight",
-        "my teapot, whistling like I can't hear it",
-        "raising her voice trying to make him understand English",
-        "the rain falls... feeding some things rusting others",
-        "at night's end a small summer moon - field daisies",
-        "making the tea the quiet of dawn - in a grey light",
-        "slate grey sky in a shaft of sun gull's white underbelly",
-        "heavy showers the cold front passes a flux of starlings",
-        "sun breaking through white plumage brighter six little egrets",
-        "as daylight fades beech leaves turning copper brown",
-        "moments before dawn cool breeze in the unblackness anticipation",
-        "the blind man crosses then amidst the crowd softly praises his dog",
-        "unexpectedly the shadows from our past intruding",
-        "empty street at noon on a school day a dog paces",
-        "A bird in a cage of seventeen syllables singing happily",
-        "split logs crackle while a winter wind howls into the darkness",
-        "venetian blinds imprisoned bowl of red apples",
-        "sparks rise in the night: even now the old tree still aspires to the stars",
-        "in the shade of the fattest pumpkin sparrows pecking sand",
-        "In desolate woods Amidst sea of fallen leaves Cry of distant crow",
-        "abandoned house remains of a garden silent rain",
-        "huge waves crashing along the pier mist rises",
-        "Dividing the fog silently, tall pines",
-        "in his jacket pocket a lemon candy from the funeral home"
-    ]
     
     
-    var didSelectItem:((_ item: String?, _ indexPath: IndexPath) -> Void)?
+    
+    var didSelectItem:((_ item: Hadith?, _ indexPath: IndexPath) -> Void)?
     
     func setupGridView(_ gridView: UICollectionView) {
         gridView.register(UINib(nibName: String(Class: CollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: CollectionViewCell.ID)
@@ -67,7 +50,7 @@ class MyGridViewPresenter: GridViewPresenter {
     func gridView(_ gridView: UICollectionView, configureCell cell: UICollectionViewCell, at indexPath: IndexPath) {
         
         guard let cell = cell as? CollectionViewCell else { return }
-        cell.configure(title: items[indexPath.row])
+        cell.configure(hadith: items[indexPath.row])
         
     }
     
